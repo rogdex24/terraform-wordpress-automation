@@ -28,7 +28,6 @@ variable "settings" {
 variable "email" {
   description = "email"
   type        = string
-  default     = "itsabutalha@gmail.com"
 }
 
 variable "wordpress_external_port" {
@@ -46,13 +45,11 @@ variable "wordpress_external_port" {
 variable "domain" {
   description = "wordpress domain"
   type        = string
-  default     = "rogdex.co"
 }
 
 variable "subdomain" {
   description = "wordpress subdomain"
   type        = string
-  default     = "www"
 }
 
 variable "db_username" {

@@ -25,8 +25,6 @@ services:
     restart: unless-stopped
     environment:
       PMA_HOST: ${dbhost}:3306
-      PMA_USER: ${dbuser}
-      PMA_PASSWORD: ${dbpassword}
       VIRTUAL_HOST: admin.${domain}
       LETSENCRYPT_HOST: admin.${domain}
       LETSENCRYPT_EMAIL: ${email}
