@@ -15,10 +15,15 @@ output "web_public_dns" {
 
 output "database_endpoint" {
   description = "The endpoint of the database"
-  value       = aws_db_instance.wordpress_database.address
+  value       = aws_db_instance.wordpress_db.address
 }
 
-output "database_port" {
-  description = "The port of the database"
-  value       = aws_db_instance.wordpress_database.port
+output "wordpress-link" {
+  description = "wordpress website"
+  value       = "https://${var.subdomain}.${var.domain}"
+}
+
+output "phpmyadmin-link" {
+  description = "wordpress website"
+  value       = "https://admin.${var.domain}"
 }
