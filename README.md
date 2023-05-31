@@ -10,6 +10,9 @@ Installs phpmyadmin to access the MySQL Database.
 
 The user account authenticated with AWS CLI should have administrative privilleges inorder create the resources on AWS.
 
+![image](https://github.com/rogdex24/terraform-wordpress-automation/assets/51379457/0a731114-f6bc-41a1-ad4b-ca44e4cedc45)
+
+
 ## Deployment Steps
 
 -> Create a `secrets.tfvars` file in root directory based on the `secrets.tfvars.template` provided.    
@@ -22,7 +25,7 @@ terraform init
 
 Run the script to install wordpress and phpmyadmin
 ```bash
-terraform plan --var-file=secrets.tfvars
+terraform apply --var-file=secrets.tfvars
 ```
 #### Sample Output:   
 Here I gave my domain as `rogdex.co` and subdomain as `www`.
